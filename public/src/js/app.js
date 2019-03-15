@@ -50,6 +50,9 @@ function configurepushsub(){
     .then(function(sub){
       if(sub === null){
         // create a new subsciption
+        reg.pushManager.subscribe({
+          userVisibleOnly:true
+        });
       }else{
         //we have subscription
       }
